@@ -22,6 +22,6 @@ After discovering what time it is in their life, users can share this unique con
 ## Running Locally
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your preferred browser.
-3. Enter your age and see what time it is!
+3. Enter your age and see what time it is!!
 
 ---
