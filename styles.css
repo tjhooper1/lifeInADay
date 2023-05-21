@@ -1,7 +1,8 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000212;
+    color: white;
 }
 
 #ageForm {
@@ -16,7 +17,7 @@ input[type="number"] {
     text-align: center;
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
 }
 
 button {
@@ -39,5 +40,28 @@ button:hover {
     margin-top: 50px;
     font-size: 48px;
     font-weight: bold;
-    color: #333;
+    color: #efefef;
+}
+
+.btn-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.fb-button{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: white;
+    cursor: pointer;
+}
+
+.fb-button:hover{
+    background-color: #2d4373;
 }

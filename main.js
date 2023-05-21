@@ -2,6 +2,10 @@ document.getElementById("ageForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form from being submitted normally
   calculateTime();
 });
+document.getElementById("fb-share").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent form from being submitted normally
+  shareToFacebook();
+});
 
 function calculateTime() {
   const averageLifeSpan = 72; // In years
@@ -21,19 +25,17 @@ function calculateTime() {
   const time = `${padNumber(hours)}:${padNumber(minutes)} ${period}`;
 
   document.getElementById("clock").innerText = time;
-  shareToFacebook(time);
 }
 
 function padNumber(number) {
   return number < 10 ? "0" + number : number;
 }
 
-function shareToFacebook(time) {
+function shareToFacebook() {
   FB.ui(
     {
       method: "share",
       href: "https://life-in-a-day.vercel.app/", // Put the link to your website here
-      quote: `If my life was only 24 hours, it'd be ${time} right now. Find out what time it is for you.`,
     },
     function (response) {}
   );

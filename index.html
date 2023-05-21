@@ -14,6 +14,11 @@
     <meta property="og:image" content="./assets/space-watches.png" />
     <title>DayInTheLife</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843431103518753"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section>
@@ -21,7 +26,10 @@
       <form id="ageForm">
         <p>Enter your age:</p>
         <input id="age" type="number" min="0" />
-        <button type="submit">What Time Is It?</button>
+        <div class="btn-container">
+          <button type="submit">What Time Is It?</button>
+          <button id="fb-share" class="fb-button">Share to Facebook!</button>
+        </div>
       </form>
       <div id="clock" class="digital-clock">00:00</div>
     </section>
