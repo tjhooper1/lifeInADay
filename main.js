@@ -24,14 +24,12 @@ function calculateTime() {
       hours -= 12;
     }
   }
-  console.log(userAge);
+
   if (userAge === "72") {
-    console.log("in here");
     hours = 12;
     minutes = 0;
     period = "AM";
   }
-  console.log(hours, minutes, period);
 
   document.getElementById("clock").innerText = `${padNumber(hours)}:${padNumber(
     minutes
