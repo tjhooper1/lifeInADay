@@ -44,7 +44,7 @@ function shareToFacebook() {
   FB.ui(
     {
       method: "share",
-      href: "https://life-in-a-day.vercel.app/", // Put the link to your website here
+      href: "https://life-clock.vercel.app/", // Put the link to your website here
     },
     function (response) {}
   );
